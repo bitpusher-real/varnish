@@ -39,6 +39,7 @@ template "#{node['varnish']['dir']}/#{node['varnish']['vcl_conf']}" do
   mode 0644
   notifies :reload, 'service[varnish]', :delayed
   only_if { node['varnish']['vcl_generated'] == true }
+  variables node['varnish']['vcl_variables']
 end
 
 service 'varnish' do

@@ -16,6 +16,7 @@ default['varnish']['listen_port'] = 6081
 default['varnish']['vcl_conf'] = 'default.vcl'
 default['varnish']['vcl_source'] = 'default.vcl.erb'
 default['varnish']['vcl_cookbook'] = 'varnish'
+default['varnish']['vcl_variables'] = {}
 default['varnish']['vcl_generated'] = true
 default['varnish']['conf_source'] = 'default.erb'
 default['varnish']['conf_cookbook'] = 'varnish'
